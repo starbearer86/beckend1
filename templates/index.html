@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{%block content%}
+<p> Zawartosc pliku index.html</p>
+    {{text}}
+    {{data}}
+
+    {%for imie in tablica%}
+        Witaj Uzytkowniku!
+        {{imie}}
+    {%endfor%}
+
+    {%if tablica%}
+        <p>imiona</p>
+    {%else%}
+        <p>else</p>
+    {%endif%}
+{%endblock content%}
